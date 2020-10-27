@@ -1,18 +1,8 @@
 # Authors: Luke Frazer and Brock Heinz
 
-def main():
-    check_string = input('Please enter a word: ')
-    for i in len(check_string):
-        print(check_string[i], end=' ')
-        print()
 
-    space = """
-       
-       
-       
-       
-       
-"""
+def main():
+
     sample = """
 #######
 #######
@@ -210,17 +200,54 @@ ZZZZZ
        
        
 """
-    letters = {'a': a, 'b': b, 'c': c, 'd': d, 'e': e, 'f': f, 'g': g,
-               'h': h, 'i': i, 'j': j, 'k': k, 'l': l, 'm': m, 'n': n,
-               'o': o, 'p': p, 'q': q, 'r': r, 's': s, 't': t, 'u': u,
-               'v': v, 'w': w, 'x': x, 'y': y, 'z': z, ' ': space}
+    letters = {
+        'a': a,
+        'b': b,
+        'c': c,
+        'd': d,
+        'e': e,
+        'f': f,
+        'g': g,
+        'h': h,
+        'i': i,
+        'j': j,
+        'k': k,
+        'l': l,
+        'm': m,
+        'n': n,
+        'o': o,
+        'p': p,
+        'q': q,
+        'r': r,
+        's': s,
+        't': t,
+        'u': u,
+        'v': v,
+        'w': w,
+        'x': x,
+        'y': y,
+        'z': z,
+        ' ': space
+    }
+
+    check_string = input('Please enter a word: ')
+    check_print = input('Would you like it vertical [1] or horizontal [2] ')
+    if check_print == '1':
+        printVertical(check_string, letters)
+    elif check_print == '2':
+        printHorizontal(check_string, letters)
+    else:
+        print('Error: Invalid choice')
+        return None
 
 
 def printHorizontal(string, letters):
     string = string.lower()
     for row in range(5):
         for char in string:
-            print(letters.get(char, "ERROR")[(8*row) + 1:(8 * (row + 1))] + "  ", end='')
+            print(letters.get(char, "ERROR")[(8 * row) + 1:(8 * (row + 1))] +
+                  "  ",
+                  end='')
         print("\n")
 
 
