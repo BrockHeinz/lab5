@@ -202,7 +202,33 @@ ZZZZZ
  Z     
 ZZZZZ  
 """
+    space = """
+       
+       
+       
+       
+       
+       
+"""
+    letters = {'a': a, 'b': b, 'c': c, 'd': d, 'e': e, 'f': f, 'g': g,
+               'h': h, 'i': i, 'j': j, 'k': k, 'l': l, 'm': m, 'n': n,
+               'o': o, 'p': p, 'q': q, 'r': r, 's': s, 't': t, 'u': u,
+               'v': v, 'w': w, 'x': x, 'y': y, 'z': z, ' ': space}
+
+
+def printHorizontal(string, letters):
+    string = string.lower()
+    for row in range(5):
+        for char in string:
+            print(letters.get(char, "ERROR")[(8*row) + 1:(8 * (row + 1))] + "  ", end='')
+        print("\n")
+
+
+def printVertical(string, letters):
+    string = string.lower()
+    for char in string:
+        print(letters.get(char, "ERROR"))
+
 
 if __name__ == '__main__':
     main()
-
