@@ -1,6 +1,18 @@
 # Authors: Luke Frazer and Brock Heinz
 
 def main():
+    check_string = input('Please enter a word: ')
+    for i in len(check_string):
+        print(check_string[i], end=' ')
+        print()
+
+    space = """
+       
+       
+       
+       
+       
+"""
     sample = """
 #######
 #######
