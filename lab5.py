@@ -127,11 +127,6 @@ Q    Q
  QQQQ  
      Q 
 """
-    
-    print(sample[0:16])
-
-main()
-
     r = """
 RRRRR  
 R    R 
@@ -139,7 +134,6 @@ RRRRR
 R    R 
 R    R 
 """
-
     s = """
  SSSS  
 S      
@@ -147,7 +141,6 @@ S
      S 
  SSSS  
 """
-
     t = """
 TTTTTTT
    T   
@@ -155,7 +148,6 @@ TTTTTTT
    T   
    T   
 """
-
     u = """
 U     U
 U     U
@@ -163,7 +155,6 @@ U     U
  U   U 
   UUU  
 """
-
     v = """
 V     V
 V     V
@@ -171,7 +162,6 @@ V     V
   V V  
    V   
 """
-
     w = """
 W  W  W
 W W W W
@@ -179,7 +169,6 @@ W W W W
  W   W 
   W W  
 """
-
     x = """
 X   X  
  X X   
@@ -187,7 +176,6 @@ X   X
  X X   
 X   X  
 """
-
     y = """
 Y     Y
  Y   Y 
@@ -195,7 +183,6 @@ Y     Y
    Y   
    Y   
 """
-
     z = """
 ZZZZZ  
    Z   
@@ -203,7 +190,6 @@ ZZZZZ
  Z     
 ZZZZZ  
 """
-    print(r+s+t+u+v+w+x+y+z)
 
 if __name__ == '__main__':
     main()
